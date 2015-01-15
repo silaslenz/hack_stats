@@ -7,7 +7,7 @@ def find_line(rgb_im):
             #print r,g,b
             #print (rgb_im[y,x-500]==rgb_im[y,x]).all()
             #print b
-            if (rgb_im[y,x-500]==rgb_im[y,x]).all() and b>200 and g>150 r<50:
+            if (rgb_im[y,x-500]==rgb_im[y,x]).all() and b>200 and g>150 and r<50:
                 return (x,y)
 import cv2,time
 f = open("imfile.txt", "w")
